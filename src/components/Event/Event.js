@@ -5,7 +5,6 @@ import { getEvents } from '../../actions/posts';
 import { getImagePosts } from '../../actions/imagePosts';
 import { useHistory } from 'react-router-dom';
 
-
 import { Nav } from 'react-bootstrap';
 
 import EventPost from './EventPost'
@@ -22,6 +21,7 @@ const Event = ({event,setEvent,setCurrentId,setSourceId,setIndex,setPostData,cur
 
     let [tab,setTab] = useState(0);
 
+
     useEffect(()=>{
         dispatch(getEvents(type,'three_words'))
         dispatch(getEventImages('three_words'))
@@ -29,6 +29,8 @@ const Event = ({event,setEvent,setCurrentId,setSourceId,setIndex,setPostData,cur
     const eImages = useSelector((state)=>state.images);
     const eventPosts = useSelector((state)=>state.events);
     const imagePosts = useSelector((state)=>state.imageposts);
+
+    console.log('event',eventPosts);
 
     // event 사진 담기
     const eventImgs = [eImages[1]?.imageURL,eImages[0]?.imageURL];
@@ -103,6 +105,7 @@ const Event = ({event,setEvent,setCurrentId,setSourceId,setIndex,setPostData,cur
                                            <EventPost post={post} event={event} setCurrentId={setCurrentId} setSourceId={setSourceId} type={type} setEvent={setEvent}></EventPost>
                                     </div>
                                    ))):(<></>)}
+                                   {/* {console.log(eventPosts)} */}
                                     </div>
                             </div>
                         )))}
