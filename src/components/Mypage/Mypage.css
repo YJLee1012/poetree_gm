@@ -1,0 +1,39 @@
+.Mypage {
+  font-family: "Libre Baskerville", "Noto Sans KR", serif;
+  padding: 200px 0;
+}
+.user {
+  display: flex;
+}
+.user img {
+  /* border-radius: 100px; */
+  width: 120px;
+  height: 120px;
+}
+.user-info {
+  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.notice {
+  margin: 30px auto;
+  color: #6b6b6b;
+}
+
+.nav.nav-tabs .nav-link.active {
+  color: #f48fb1;
+}
+
+.nav.nav-tabs .nav-link {
+  color: #6b6b6b;
+  font-size: 1.2rem;
+}
+.nav.nav-tabs .nav-link:hover {
+  background-color: #f4f4f4;
+}

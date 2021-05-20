@@ -1,0 +1,94 @@
+.post h3 {
+  margin: 100px 0 50px 0;
+  font-family: "Nanum Myeongjo", serif;
+}
+.note {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.form {
+  /* border: 1px solid black; */
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.post-img {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 100%;
+  /* line-height: 100%; */
+}
+.post-img img {
+  /* vertical-align: middle; */
+  height: 70vh;
+  /* 비율유지contain .cover는 꽉 채워줌 */
+  object-fit: contain;
+  margin: 15vh;
+}
+.post {
+  /* border: 1px solid blue; */
+  width: 50%;
+}
+.post-write {
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 80%;
+  height: 60vh;
+  font-family: "Nanum Myeongjo", serif;
+}
+.btns {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+.btns Button {
+  margin: 10px;
+}
+
+textarea {
+  height: 70%;
+  padding: 15px;
+  line-height: 1.5;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  .note {
+    display: none;
+  }
+  .form {
+    position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .post {
+    width: 100%;
+  }
+  .post-img {
+    width: inherit;
+  }
+  .post-img img {
+    width: 300px;
+    height: 500px;
+    margin: 40px;
+  }
+  .post h3 {
+    margin: 20px 0;
+  }
+  .btns {
+    width: inherit;
+  }
+}

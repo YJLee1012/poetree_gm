@@ -1,0 +1,103 @@
+.post_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 100%; */
+  position: relative;
+  font-family: "Libre Baskerville", "Noto Sans KR", serif;
+  object-fit: contain;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.user-time {
+  position: absolute;
+  top: 3%;
+  left: 8%;
+  color: black;
+  text-align: left;
+}
+.edit {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 1;
+}
+
+.cardActions {
+  padding: 0 16px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+.content {
+  /* display: table; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  /* border: 1px solid pink; */
+  width: 100%;
+  height: 100%;
+  /* border:10px solid yellow; */
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s;
+  cursor: pointer;
+}
+.content .content-inner {
+  font-family: "Nanum Myeongjo", serif;
+  /* display: table-cell; */
+  text-align: left;
+  vertical-align: center;
+  /* border:10px solid blue; */
+  color: #fff;
+  overflow: hidden;
+  height: 100%;
+
+  padding: 121px 30px;
+  z-index: 3;
+}
+.content-inner p {
+  height: 100%;
+  overflow: hidden;
+}
+.content:hover {
+  opacity: 1;
+}
+.post_views {
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.tag {
+  color: rgb(151, 151, 151);
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .content .content-inner {
+    padding: 24px;
+  }
+  .post_card .image {
+    height: 100vw;
+    object-fit: cover;
+  }
+  .user-time {
+    font-size: 0.7rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .tag {
+    font-size: 0.8rem;
+  }
+  .post_views {
+    font-size: 0.7rem;
+  }
+}

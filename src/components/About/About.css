@@ -1,0 +1,180 @@
+.about {
+  font-family: "Old Standard TT", "Noto Sans KR", serif;
+  overflow: hidden;
+}
+.about .bg {
+  position: relative;
+  padding: 0;
+  width: 100vw;
+  height: 45vh;
+  /* height: 100vh; */
+  opacity: 0.8;
+  object-fit: cover;
+}
+.about h1 {
+  font-family: "Satisfy", serif;
+  font-size: 5rem;
+  position: absolute;
+  top: 20%;
+  left: 42vw;
+  /* left: 38%; */
+  color: #4b4b4b;
+}
+
+.about_text {
+  text-align: center;
+  padding: 60px;
+}
+.about_text .Poetree {
+  font-size: 2.5rem;
+}
+.line1 {
+  width: 80px;
+  height: 2px;
+  background-color: rgb(75, 75, 75);
+  margin: 30px auto;
+}
+.poet p,
+.explain {
+  line-height: 2;
+}
+.explain {
+  margin-top: 100px;
+  font-size: 1.1rem;
+}
+
+.about_image {
+  padding: 100px 0;
+  background-color: rgb(248, 247, 245);
+}
+.about_flex {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about_img_text {
+  width: 50%;
+  margin: 100px 0;
+}
+.about_img_text p,
+.about_tag_text p {
+  padding: 16px;
+}
+.about_imgs {
+  position: relative;
+  width: 50%;
+}
+.about_imgs .img1 {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+.about_imgs .img2 {
+  position: absolute;
+  top: 30%;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+.about_imgs .img3 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+.about_imgs .img4 {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.about_tag {
+  padding: 100px 0;
+}
+.about_tag_flex {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_tag_img {
+  width: 50%;
+}
+.about_tag_img img {
+  width: 450px;
+  height: 450px;
+}
+.about_tag_text {
+  width: 50%;
+}
+
+.main-banner {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #f8f8f8; */
+  padding: 30px 0;
+}
+.main-banner p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #4b4b4b;
+}
+.about0 {
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .about h1 {
+    font-size: 3rem;
+    left: 20%;
+  }
+  .about_flex {
+    flex-direction: column-reverse;
+  }
+  .about_img_text {
+    width: 100%;
+    margin: 0;
+  }
+  .about_imgs {
+    width: 100%;
+    margin: 200px 20px;
+  }
+  .about_imgs .img1,
+  .about_imgs .img2,
+  .about_imgs .img3,
+  .about_imgs .img4 {
+    width: 100px;
+    height: 100px;
+  }
+  .about_imgs .img1 {
+    top: 67px;
+  }
+  .main-banner {
+    flex-direction: column;
+    height: 80vh;
+    margin: 30px;
+  }
+  .about_tag_flex {
+    flex-direction: column;
+  }
+  .about_tag_img,
+  .about_tag_text {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .about_tag_img img {
+    width: 300px;
+    height: 300px;
+  }
+}
